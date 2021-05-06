@@ -19,7 +19,11 @@ Media aritimetica: 4.5
 public class CaluculaMediaAritimetica {
 
     public static void main(String[] args){
+
+        System.out.println("Digite o primeiro valor ");
         double primeiroNumero = 3;
+
+        System.out.println("Digite os segundo valor " );
         double segundoNumero = 6;
 
         double resultado = (primeiroNumero + segundoNumero) / 2;
