@@ -14,14 +14,16 @@ Media aritimetica: 4.5
 
 
  */
-
+import java.util.Scanner;
 
 public class CaluculaMediaAritimetica {
 
     public static void main(String[] args){
 
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Digite o primeiro valor ");
-        double primeiroNumero = 3;
+        double primeiroNumero = scanner.nextDouble();
 
         System.out.println("Digite os segundo valor " );
         double segundoNumero = 6;
