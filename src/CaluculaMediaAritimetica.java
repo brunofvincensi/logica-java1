@@ -26,7 +26,7 @@ public class CaluculaMediaAritimetica {
         double primeiroNumero = scanner.nextDouble();
 
         System.out.println("Digite os segundo valor " );
-        double segundoNumero = 6;
+        double segundoNumero = scanner.nextDouble();
 
         double resultado = (primeiroNumero + segundoNumero) / 2;
 
