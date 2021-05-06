@@ -30,6 +30,8 @@ public class CaluculaMediaAritimetica {
 
         double resultado = (primeiroNumero + segundoNumero) / 2;
 
+
+
         System.out.println("O resultado é " + resultado);
     }
 }
