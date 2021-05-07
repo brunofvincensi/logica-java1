@@ -15,9 +15,23 @@ public class TrabalhandoComTexto {
       System.out.println("Digite seu peso: ");
       double peso = scanner.nextDouble();
 
+      System.out.println("Digite sua altura: ");
+      double altura = scanner.nextDouble();
+
+      double imc = peso/(altura * altura);
+
       String valoresConcatenados = "Oi meu nome é " + nome + ", tenho " + idade + " anos e estou pesando " + peso;
 
       System.out.println(valoresConcatenados);
+
+      System.out.println("Seu imc é " + imc);
+
+
+      if (imc>25)
+         System.out.println("Voce precisa fazer uma dieta");
+      else
+         System.out.println("Voce ta de boas");
+
 
 
 
