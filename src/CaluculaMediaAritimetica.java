@@ -33,5 +33,7 @@ public class CaluculaMediaAritimetica {
 
 
         System.out.println("O resultado é " + resultado);
+
+
     }
 }
