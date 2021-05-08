@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class TrabalhandoComTexto {
 
-   public static void main(String[] args){
+   public static void main(String[] args) {
+
 
       Scanner scanner = new Scanner(System.in);
 
@@ -18,24 +19,19 @@ public class TrabalhandoComTexto {
       System.out.println("Digite sua altura: ");
       double altura = scanner.nextDouble();
 
-      double imc = peso/(altura * altura);
+      double imc = peso / (altura * altura);
 
       String valoresConcatenados = "Oi meu nome é " + nome + ", tenho " + idade + " anos e estou pesando " + peso;
 
       System.out.println(valoresConcatenados);
 
-      System.out.println("Seu imc é " + imc);
+      System.out.printf("Seu imc é " + "%.2f%n", imc);
 
 
-      if (imc>25)
+      if (imc > 25)
          System.out.println("Voce precisa fazer uma dieta");
       else
          System.out.println("Voce ta de boas");
-
-
-
-
-
 
 
    }
