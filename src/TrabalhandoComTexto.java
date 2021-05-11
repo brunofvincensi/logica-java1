@@ -23,7 +23,7 @@ public class TrabalhandoComTexto {
 
       String valoresConcatenados = "Oi meu nome é " + nome + ", tenho " + idade + " anos e estou pesando " + peso;
 
-      System.out.println(valoresConcatenados);
+      System.out.printf("Oi meu nome é %s, tenho %d anos e estou pesando %.2f%n", nome, idade, peso);
 
       System.out.printf("Seu imc é " + "%.2f%n", imc);
 
