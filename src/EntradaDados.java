@@ -3,8 +3,8 @@ public class EntradaDados {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-// quando é botado apenas next na variavel String nao aparecera palavras depois do espaco.
-        String S = scanner.next();
+// quand            //
+// String S = scanner.next();
 
         char variavelQueRecebeSomenteUmCaracter = scanner.next().charAt(0);
 
@@ -15,9 +15,11 @@ public class EntradaDados {
         String s1,s2,s3;
 
         x = scanner.nextInt();
+        scanner.nextLine();
         s1 = scanner.nextLine();
         s2 = scanner.nextLine();
         s3 = scanner.nextLine();
+
 
         System.out.println("Dados digitados: ");
         System.out.println(x);
