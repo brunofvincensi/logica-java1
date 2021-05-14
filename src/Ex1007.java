@@ -17,6 +17,8 @@ public class Ex1007 {
 
         System.out.println("DIFERENCA = " + R);
 
+        scanner.close();
+
 
 
 
