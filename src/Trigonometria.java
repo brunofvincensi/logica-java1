@@ -18,7 +18,20 @@ public class Trigonometria {
         System.out.println("Hipotenusa");
         double hipotenusa = scanner.nextDouble();
 
-        if(angulo == 0)
+        double hip = oposto/Math.sin(Math.toRadians( angulo ));
+
+
+
+
+        if(hipotenusa == 0.0F)
+
+            if(adjacente == 0.0F)
+                System.out.printf("Hipotenusa: ", hip);
+
+
+
+
+
 
 
 

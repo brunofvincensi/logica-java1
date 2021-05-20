@@ -19,6 +19,8 @@ public class FormulaBaskara {
 
         System.out.printf("O x1 é %.2f e o x2 é %.2f", x1, x2);
 
+        scanner.close();
+
 
 
 
