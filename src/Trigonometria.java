@@ -6,34 +6,38 @@ public class Trigonometria {
         Scanner scanner = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        System.out.println("Hipotenusa: ");
-        double hipotenusa = scanner.nextDouble();
+        double hipotenusa, angulo, adjacente, oposto, hip, hip2, hip3, adj, adj2, adj3, ops, ops2, ops3;
 
         System.out.println("Angulo: ");
-        double angulo = scanner.nextDouble();
+        angulo = scanner.nextDouble();
+
+        System.out.println("Hipotenusa: ");
+        hipotenusa = scanner.nextDouble();
 
         System.out.println("Cateto Adjacente: ");
-        double adjacente = scanner.nextDouble();
+        adjacente = scanner.nextDouble();
 
         System.out.println("Cateto Oposto: ");
-        double oposto = scanner.nextDouble();
+        oposto = scanner.nextDouble();
 
 
+        hip = oposto/Math.sin(Math.toRadians( angulo ));
 
-        double hip = oposto/Math.sin(Math.toRadians( angulo ));
+        hip2 = adjacente/Math.cos(Math.toRadians( angulo ));
 
-        double adj = Math.sqrt(Math.pow(hip, 2) - Math.pow(oposto, 2));
+        hip3 = Math.sqrt(Math.pow(adjacente, 2) + Math.pow(oposto, 2));
 
-        double hip2 = adjacente/Math.cos(Math.toRadians( angulo ));
+        adj = Math.sqrt(Math.pow(hip, 2) - Math.pow(oposto, 2));
 
-        double ops = Math.sqrt(Math.pow(hip2, 2) - Math.pow(adjacente, 2));
+        adj2 = Math.sqrt(Math.pow(hipotenusa, 2) - Math.pow(oposto, 2));
 
-        double diagonal = Math.sqrt(Math.pow(adjacente, 2) + Math.pow(oposto, 2));
+        adj3 = Math.cos(Math.toRadians(angulo))* hipotenusa;
 
-        double adj2 = Math.sqrt(Math.pow(hipotenusa, 2) - Math.pow(oposto, 2));
+        ops = Math.sqrt(Math.pow(hip2, 2) - Math.pow(adjacente, 2));
 
-        double ops2 = Math.sqrt(Math.pow(hipotenusa, 2) - Math.pow(adjacente, 2));
+        ops2 = Math.sqrt(Math.pow(hipotenusa, 2) - Math.pow(adjacente, 2));
 
+        ops3 = Math.sin(Math.toRadians(angulo))* hipotenusa;
 
 
 
@@ -51,23 +55,26 @@ public class Trigonometria {
 
             }
 
-            System.out.printf("Hipotenusa: %.2f%n", diagonal);
+            System.out.printf("Hipotenusa: %.2f%n", hip3);
 
 
            }
         else
-            if(adjacente == 0.0F)
+            if(oposto != 0.0F){
 
                 System.out.printf("Cateto Adacente: %.2f%n", adj2);
 
+            }
 
-            if(oposto == 0.0F)
+
+            if(adjacente != 0.0F){
 
 
                 System.out.printf("Cateto Oposto: %.2f%n", ops2);
 
+            }
 
-
+            System.out.printf("Cateto Oposto: %.2f%nCateto Adjacente: %.2f%n", ops3, adj3);
 
 
 
