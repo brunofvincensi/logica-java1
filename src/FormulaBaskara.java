@@ -14,10 +14,18 @@ public class FormulaBaskara {
         double c = scanner.nextDouble();
 
         double delta = Math.pow(b, 2.0) - 4 * a * c;
+
+        if(a == 0 || delta < 0.0){
+            System.out.println("Impossivel de calcular");
+
+
+
+        }
+        else{
         double x1 = (-b + Math.sqrt(delta))/(2.0 * a);
         double x2 = (-b - Math.sqrt(delta))/(2.0 * a);
 
-        System.out.printf("O x1 é %.2f e o x2 é %.2f", x1, x2);
+        System.out.printf("O x1 é %.2f e o x2 é %.2f", x1, x2);}
 
         scanner.close();
 
