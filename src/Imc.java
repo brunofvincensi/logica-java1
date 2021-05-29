@@ -6,9 +6,10 @@ public class Imc {
         Scanner scanner = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
+
         double peso = scanner.nextDouble();
         double altura = scanner.nextDouble();
-        double imc = peso/ (altura * altura);
+        double imc = peso / (altura * altura);
 
         System.out.printf("Imc: %.2f%n", imc);
 
