@@ -1,0 +1,8 @@
+Aplicativo para direcionamento de mecanicas
+
+seria usado para quando ocorresse um "acidente" leve em que não precisaria chamar o seguro, podendo ser uma simples batida no carro ou um problema
+interno do carro que é resolvido na mecanica. Dai entraria o uso do aplicativo, servindo para o usuario do automóvel visualizar as mecanicas mais
+proximas em seu raio de alcance determinado pelo proprio usuario e nisso apareceria uma lista das mesmas com as informaçoes. E tambem teria uma
+funcionalidade de relatar a todas essas mecanicas proximas o seu problema caso voce consiga com uma foto ou descrevendo, dai cada mecanica
+te enviaria um valor para o concerto desse automovel te dando mais agilidade nesse processo 
+E obviamente ao mesmo tempo teria uma ramificação desse aplicativo para o uso 
