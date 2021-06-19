@@ -1,0 +1,120 @@
+import java.util.Scanner;
+
+public class Ex1080 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int X;
+        int maior = 0;
+        int posicao = 0;
+
+        for(int i = 1; i <= 100; i++){
+
+            X = sc.nextInt();
+
+            if(X > maior){
+
+                maior = X;
+                posicao = i;
+            }
+
+        }
+        System.out.println(maior);
+        System.out.println(posicao);
+
+
+        sc.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex1132 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int X = sc.nextInt();
+        int Y = sc.nextInt();
+        int maior;
+        int menor;
+        int cont = 0;
+        int result;
+
+        if(X>Y){
+            maior = X;
+            menor = Y;
+        }
+        else{
+            maior = Y;
+            menor = X;
+        }
+
+            while(menor < maior){
+
+                menor++;
+
+                if(menor%13 != 0){
+
+                cont = cont + menor;
+
+             }
+            }
+            if(X>Y){
+            result = cont + Y  ;
+            }
+            else {
+                result = cont + X;
+            }
+
+                System.out.println(result);
+
+
+        sc.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex1142 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int i2;
+        int i3;
+
+        for(int i = 3; i<=N*4 - 1; i = i + 4){
+
+            i2 = i-1;
+            i3 = i-2;
+            System.out.printf("%d %d %d PUM%n", i3, i2, i);
+        }
+
+
+
+        sc.close();
+    }
+}
+
+import java.util.Scanner;
+
+public class Ex1157 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        for(int i = 1; i<=N; i++){
+
+            if(N % i == 0) {
+                System.out.println(i);
+            }
+
+        }
+
+
+        sc.close();
+    }
+}
+
